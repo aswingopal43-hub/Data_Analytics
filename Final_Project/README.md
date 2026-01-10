@@ -11,7 +11,7 @@ The main goal is to explain **what influenced team performance** during the tour
 The dataset contains player-level and team-level statistics from the FIFA World Cup 2022, including:
 - Goals and assists  
 - Minutes played and matches played  
-- Shots on target and goals conceded  
+- Shots on target and Goals_aganist  
 - Defensive actions and clean sheets  
 - Yellow and red cards  
 
