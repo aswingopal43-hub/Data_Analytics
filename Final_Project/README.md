@@ -1,85 +1,124 @@
 # FIFA World Cup 2022 – Tournament & Team-Level Analysis
 
-## Overview
-This project presents an **Exploratory Data Analysis (EDA)** of the FIFA World Cup 2022, focusing on how teams performed in terms of attacking output, defensive efficiency, and discipline. The analysis transforms raw player and team data into clear, easy-to-understand insights using Python and data visualization.
+## Project Overview
+The FIFA World Cup 2022 is one of the biggest international football tournaments, featuring the world’s top national teams and players.  
+This project uses **Exploratory Data Analysis (EDA)** to understand overall tournament trends and compare team-level performances using real match data.
 
-The main goal is to explain **what influenced team performance** during the tournament in a structured and data-driven way.
+The aim is to explain **how teams performed**, what patterns emerged across the tournament, and what factors were linked with success — all in a clear and easy-to-understand way.
 
 ---
 
-## Dataset Description
-The dataset contains player-level and team-level statistics from the FIFA World Cup 2022, including:
-- Goals and assists  
-- Minutes played and matches played  
-- Shots on target and Goals_aganist  
-- Defensive actions and clean sheets  
-- Yellow and red cards  
+## Dataset Information
+- **Source:** FBref (football statistics platform)
+- **Records:** 679 players  
+- **Features:** ~18 columns  
 
-Data cleaning and preprocessing were carried out to ensure accuracy and consistency before analysis.
+The dataset includes:
+- Player details (age, position, team)
+- Playing time (matches played, minutes)
+- Attacking stats (goals, assists, shots, shots on target)
+- Defensive stats (tackles, interceptions, blocks)
+- Discipline (yellow and red cards)
+- Goalkeeping stats (goals conceded, saves, clean sheets)
+
+---
+
+## Project Objectives
+
+### Tournament-Level Analysis
+- Provide a high-level view of the tournament
+- Analyze squad composition, age distribution, positions, and playing time
+- Identify overall attacking, defensive, and discipline trends
+- Highlight standout performers
+
+### Team-Level Analysis
+- Evaluate team attacking output and efficiency
+- Assess defensive effort and defensive success
+- Compare discipline and physical playing styles
+- Identify top-performing and well-balanced teams
 
 ---
 
 ## Project Structure
 
-### 1. Data Loading & Preprocessing
-- Dataset inspection (rows, columns, data types)  
-- Missing value checks  
-- Creation of derived metrics:
-  - Goal contributions  
-  - Goal conversion rate  
-  - Defensive efficiency indicators  
+### 1. Data Loading & Initial Overview
+- Checked dataset size and structure
+- Reviewed data types and missing values
+- Examined summary statistics
+- Viewed sample rows for familiarity
 
 ---
 
-### 2. Exploratory Data Analysis (EDA)
-
-#### Tournament-Level Analysis
-This section provides a high-level overview of the tournament:
-- Player age distribution and squad composition  
-- Position-wise player distribution  
-- Playing time and workload patterns  
-- Overall attacking, defensive, and disciplinary trends  
-- Correlation analysis between key performance metrics  
-
-This analysis sets the overall context before moving to team-level comparisons.
-
----
-
-#### Team-Level Analysis
-This section evaluates team performance by aggregating player data:
-- Top-performing teams based on goal contributions  
-- Offensive efficiency (goals vs shots on target)  
-- Defensive efficiency (defensive actions vs clean sheets)  
-- Team discipline using total, yellow, and red cards  
-
-These insights highlight differences in playing style, efficiency, and tactical balance across teams.
+### 2. Data Preprocessing
+To ensure clean and reliable analysis:
+- Removed duplicates and handled missing values
+- Standardized column names
+- Cleaned categorical data (player names, positions, team names)
+- Created derived metrics such as:
+  - Shot accuracy
+  - Goal conversion rate
+  - Goal contribution
+  - Defensive actions
+- Applied safeguards to avoid division-by-zero errors
 
 ---
 
-## Key Findings
-- Tournament success depended on **balance**, not dominance in a single metric  
-- Efficient finishing often mattered more than high shot volume  
-- Defensive organization was more important than defensive workload  
-- High defensive activity did not always result in clean sheets  
-- Yellow cards reflected aggressive tactics, while red cards were rare  
-- Teams combining efficiency, structure, and discipline performed most consistently  
+### 3. Team-Level Aggregation
+Player-level data was aggregated to create team-level metrics, including:
+- Total goals, assists, and goal contributions
+- Shots and shots on target
+- Defensive actions and goals conceded
+- Total cards
+- Goalkeeping stats (saves and clean sheets from goalkeepers only)
+
+This provides a complete view of each team’s overall performance.
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+### Tournament Overview
+- Player age and position distribution
+- Playing time and workload patterns
+- Overall attacking, defensive, and disciplinary trends
+- Correlation heatmap between key metrics (goals, assists, minutes, clean sheets, cards, etc.)
+
+### Team-Level Analysis
+- Top teams by attacking output
+- Offensive efficiency (goals vs shots on target)
+- Defensive efficiency (defensive actions vs clean sheets)
+- Discipline analysis using yellow and red cards
+
+---
+
+## Key Insights
+- Success was driven by **balance**, not just high activity
+- Efficient finishing mattered more than taking many shots
+- Defensive organization was more important than defensive workload
+- Teams with fewer defensive actions could still keep clean sheets
+- Yellow cards often reflected aggressive tactics, not poor discipline
+- Red cards were rare across the tournament
+- Teams like **France, Argentina, England, and Morocco** showed strong overall balance
 
 ---
 
 ## Limitations
-- Advanced metrics such as expected goals (xG) were limited or inaccurate  
-- Team-level aggregation may hide match-specific context  
-- Tactical decisions and in-game situations are not fully captured by statistics  
+- Team-level aggregation can hide match-by-match details
+- Match context (opponent strength, game situation) is not included
+- Defensive actions and cards measure activity, not quality
+- **Expected Goals (xG) was not used** due to inconsistent data
+- The analysis is descriptive, not predictive
 
 ---
 
-## Overall Conclusion
-The analysis shows that successful teams combined:
+## Conclusion
+This project shows that World Cup success depends on:
 - **Efficient attacking**
 - **Organized defending**
 - **Controlled physical play**
 
-Teams that converted chances well, defended with structure rather than volume, and managed discipline effectively were best positioned to achieve consistent results throughout the tournament.
+Teams that converted chances well, defended with structure rather than volume, and maintained discipline performed more consistently.  
+The analysis provides a clear, data-driven view of how the FIFA World Cup 2022 unfolded and offers a strong foundation for future football analytics work.
 
 ---
 
@@ -92,6 +131,6 @@ Teams that converted chances well, defended with structure rather than volume, a
 
 ---
 
-## Purpose of the Project
-This project is designed for **learning, football analytics exploration, and portfolio demonstration**.  
-It shows how Python and data visualization can be used to analyze real-world football data and present insights in a clear and simple way.
+## Purpose
+This project is created for **learning, football analytics exploration, and portfolio demonstration**.  
+It shows how Python and data visualization can be used to analyze real football data and present insights in a simple and meaningful way.
