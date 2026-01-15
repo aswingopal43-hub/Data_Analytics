@@ -86,7 +86,7 @@ This provides a complete view of each team’s overall performance.
 ### Team-Level Analysis
 - Top teams by attacking output
 - Offensive efficiency (goals vs shots on target)
-- Defensive efficiency (defensive actions vs clean sheets)
+- Defensive efficiency (shots faced vs clean sheets)
 - Discipline analysis using yellow and red cards
 
 ---
