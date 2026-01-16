@@ -10,7 +10,7 @@ The aim is to explain **how teams performed**, what patterns emerged across the 
 
 ## Dataset Information
 - **Source:** FBref (football statistics platform)
-- **Records:** 679 players  
+- **Records:** ~680 players  
 - **Features:** ~18 columns  
 
 The dataset includes:
