@@ -134,3 +134,13 @@ The analysis provides a clear, data-driven view of how the FIFA World Cup 2022 u
 ## Purpose
 This project is created for **learning, football analytics exploration, and portfolio demonstration**.  
 It shows how Python and data visualization can be used to analyze real football data and present insights in a simple and meaningful way.
+
+## Interactive Plots
+
+### Offensive Efficiency
+View the interactive offensive efficiency figure here:  
+[Team Offensive Efficiency](team_offensive_efficiency.html)
+
+### Defensive Efficiency
+View the interactive defensive efficiency figure here:  
+[Team Defensive Efficiency](team_defensive_efficiency.html)
